@@ -1,0 +1,19 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Runtime uploads (user files)
+uploads/*
+!uploads/.htaccess
+
+# Logs
+logs/
+*.log
+
+# OS / editor cruft
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/

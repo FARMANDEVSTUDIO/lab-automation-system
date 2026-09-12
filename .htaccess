@@ -1,0 +1,15 @@
+# Protect .env from web access
+<FilesMatch "^\.env$">
+    Require all denied
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+# Protect log files
+<FilesMatch "\.(log|sql)$">
+    Require all denied
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+ErrorDocument 404 /404.php
